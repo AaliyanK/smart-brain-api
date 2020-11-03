@@ -29,6 +29,8 @@ app.use(express.json());
 // For frontend
 app.use(cors())
 
+app.get('/', (req,res)=> { res.send('it is working!')})
+
 app.post('/signin', (req, res) => { signIn.handleSignin(req,res,db,bcrypt) })
 
 // Dependency injection, send in dependencies to function
