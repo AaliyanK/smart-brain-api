@@ -7,6 +7,7 @@ const signIn = require('./controllers/signIn');
 const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0
 
 // Initialize DB
 const db = knex({
